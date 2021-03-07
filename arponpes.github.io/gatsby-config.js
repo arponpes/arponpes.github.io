@@ -6,7 +6,12 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: "Aaron",
+    siteTitleAlt: `Aaron, web developer.`,
+    title: `My Blog`,
+    author: `Aaron Dominguez`,
+    description: `Personal web page.`,
+    siteUrl: `https://arponpes.github.io/`,
   },
   plugins: [
     {
@@ -19,18 +24,22 @@ module.exports = {
             slug: `/blog`,
           },
           {
-            title: `About`,
-            slug: `/about`,
+            title: `Projects`,
+            slug: `/projects`,
+          },
+          {
+            title: `Goals`,
+            slug: `/goals`,
           },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Linkedin`,
+            url: `https://www.linkedin.com/in/aaron-dominguez-diez/`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Github`,
+            url: `https://github.com/arponpes`,
           },
         ],
       },
@@ -45,24 +54,44 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Aaron Dominguez Diez`,
+        short_name: `Aaron`,
+        description: `Personal web page.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
+            src: `/android-icon-36x36.png`,
+            sizes: `36x36`,
+            type: `image/png`
+           },
+           {
+            src: `/android-icon-48x48.png`,
+            sizes: `48x48`,
+            type: `image/png`
+           },
+           {
+            src: `/android-icon-72x72.png`,
+            sizes: `72x72`,
+            type: `image/png`
+           },
+           {
+            src: `/android-icon-96x96.png`,
+            sizes: `96x96`,
+            type: `image/png`
+           },
+           {
+            src: `/android-icon-144x144.png`,
+            sizes: `144x144`,
+            type: `image/png`
+           },
+           {
+            src: `/android-icon-192x192.png`,
             sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
+            type: `image/png`
+           }
         ],
       },
     },
